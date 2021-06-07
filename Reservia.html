@@ -2,6 +2,7 @@
 <html>
     <head>
         <title>Reservia</title>
+        <script src="https://kit.fontawesome.com/2cc0192606.js" crossorigin="anonymous"></script><!--Pour intégrer les icones-->
         <meta charset="utf-8"/>
         <link rel="stylesheet" type="text/css" href="Styles/Styles.css"/>
     </head>
@@ -9,84 +10,81 @@
         <div class="container_body">
             <header>
                 <div id="logo_reservia">
-                    <p>
-                        <img src="img/images/logo/Reservia_logo.png" id="logo" alt="logo_reservia"/>
-                    </p>
+                    <img src="img/images/logo/Reservia_logo.png" id="logo" alt="logo_reservia"/>
                 </div>
                 <nav>
-                    <lu>
+                    <ul>
                         <li>
-                            <a href="#hebergements_a_marseille">
+                            <a href="#hebergements_a_marseille" id="hebergements">
                                 Hébergements
                             </a>
                         </li>
                         <li>
-                            <a href="#activites_a_marseille">
+                            <a href="#filtres" id="activites">
                                 Activités
                             </a>
                         </li>
                         <li>
-                            <a href="#">
+                            <a href="#" id="inscription">
                                 S'inscrire
                             </a>
                         </li>
-                    </lu>
+                    </ul>
                 </nav>
             </header>
-            <div id="recherche_hebergement">
-                <h1>
+            <div name="recherche_hebergement" id="recherche_hebergement">
+                <h1 id="titre_hebergements">
                     Trouvez votre hébergement pour des vacances de rêve
                 </h1>
-                <p>
+                <p id="sous-titre">
                     En plein centre ville ou en pleine nature
                 </p>
                 <form method="POST" action="traitement.php">
                     <p>
-                        <label for="rechercher">
-                            <img src="" alt=""/>
-                        </label>
-                        <input type="text" name="rechercher" id="rechercher" maxlength="40" value="Marseille,France"/>
-                        <input type="submit" value="Rechercher"/>
+                        <i id="position" class="fas fa-map-marker-alt"></i>
+                        <input type="text" name="rechercher" id="rechercher" maxlength="30" value="Marseille,France"/>
+                        <input type="submit" value="Rechercher" id="bouton"/>
                     </p>
                 </form>
             </div>
-            <div>
-                <lu>
-                    <h4>
+            <div id="filtre">
+                <ul>
+                    <legend>
                         Filtres
-                    </h4>
+                    </legend>
                     <li>
-                        <a href="#">
-                            <img src="#" alt="">
+                        <a id="economique" href="#">
                             Économique
                         </a>
                     </li>
+                    <i id="billet" class="fas fa-money-bill-wave"></i>
                     <li>
-                        <a href="#">
-                            <img src="#" alt="">
+                        <a id="familial" href="#">
                             Familial
                         </a>
                     </li>
+                    <i id="personne" class="fas fa-child"></i>
                     <li>
-                        <a href="#">
-                            <img src="#" alt="">
+                        <a id="romantique" href="#">
                             Romantique
                         </a>
                     </li>
+                    <i id="coeur" class="fas fa-heart"></i>
                     <li>
-                        <a href="#">
-                            <img src="#" alt="">
+                        <a id="animaux" href="#">
                             Animaux autorisés
                         </a>
                     </li>
-                </lu>
-                <p>
-                    <img src="#" alt=""/> Plus de 500 logements sont disponibles dans cette ville
-                </p>
+                    <i id="chien" class="fas fa-dog"></i>
+                </ul>
             </div>
+            <p id="information">
+                <i id="info" class="fas fa-info"></i>
+                Plus de 500 logements sont disponibles dans cette ville
+            </p>
             <section>
                 <article>
-                    <h1 id="hebergements_a_marseille">
+                    <h1 name="hebergements_a_marseille">
                         Hébergements à Marseille
                     </h1>
                     <div id="lieux_hebergement">
@@ -95,7 +93,8 @@
                                 <a href="">
                                     <img src="img/images/hebergements/4_small/auberge_la_cannebiere.jpg" alt="auberge de la cannebière"/><br/>
                                     Auberge la Cannebière<br/>
-                                    Nuit à partir de 25€
+                                    Nuit à partir de 25€<br/>
+                                    <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="far fa-star"></i>
                                 </a>
                             </p>
                         </div>
@@ -104,7 +103,8 @@
                                 <a href="">
                                     <img src="img/images/hebergements/4_small/hotel_du_port.jpg" alt="hôtel du port"/><br/>
                                     Hôtel du port<br/>
-                                    Nuit à partir de 52€
+                                    Nuit à partir de 52€<br/>
+                                    <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
                                 </a>
                             </p>
                         </div>
@@ -113,7 +113,8 @@
                                 <a href="">
                                     <img src="img/images/hebergements/4_small/hotel_les_mouettes.jpg" alt="hôtel les mouettes"/><br/>
                                     Hôtel Les mouettes<br/>
-                                    Nuit à partir de 76€
+                                    Nuit à partir de 76€<br/>
+                                    <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="far fa-star"></i>
                                 </a>
                             </p>
                         </div>
@@ -122,7 +123,8 @@
                                 <a href="">
                                     <img src="img/images/hebergements/4_small/hotel_de_la_mer.jpg" alt="hôtel de la mer"/><br/>
                                     Hôtel de la mer<br/>
-                                    Nuit à partir de 46€
+                                    Nuit à partir de 46€<br/>
+                                    <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="far fa-star"></i><i class="far fa-star"></i>
                                 </a>
                             </p>
                         </div>
@@ -131,7 +133,8 @@
                                 <a href="">
                                     <img src="img/images/hebergements/4_small/auberge_le_panier.jpg" alt="Auberge le panier"/><br/>
                                     Auberge Le Panier<br/>
-                                    Nuit à partir de 23€
+                                    Nuit à partir de 23€<br/>
+                                    <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="far fa-star"></i>
                                 </a>
                             </p>
                         </div>
@@ -140,7 +143,8 @@
                                 <a href="">
                                     <img src="img/images/hebergements/4_small/hotel_chez_amina.jpg" alt="hôtel chez amina"/><br/>
                                     Hôtel chez Amina<br/>
-                                    Nuit à partir de 96€
+                                    Nuit à partir de 96€<br/>
+                                    <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
                                 </a>
                             </p>
                         </div>
@@ -151,14 +155,16 @@
                 </article>
                 <aside>
                     <h1>
-                        Les plus populaires
+                        Les plus populaires 
                     </h1>
+                    <i class="fas fa-chart-line"></i>
                     <div>
                         <p>
                             <a href="">
                                 <img src="img/images/hebergements/4_small/hotel_le_soleil_du_matin.jpg" alt="hôtel le soleil du matin"/><br/>
                                 Hôtel Le soleil du matin<br/>
-                                Nuit à partir de 128€
+                                Nuit à partir de 128€<br/>
+                                <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
                             </a>
                         </p>
                     </div>
@@ -167,7 +173,8 @@
                             <a href="">
                                 <img src="img/images/hebergements/4_small/au_coeur_de_l'eau_chambre_d'hotes.jpg" alt="au coeur de l'eau chambre d'hôtes"/><br/>
                                 Au cour de l'eau Chambres d'hôtes<br/>
-                                Nuit à partir de 71€
+                                Nuit à partir de 71€<br/>
+                                <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="far fa-star"></i>
                             </a>
                         </p>
                     </div>
@@ -176,7 +183,8 @@
                             <a href="">
                                 <img src="img/images/hebergements/4_small/hotel_tout_bleu_et_blanc.jpg" alt="hôtel tout bleu et blanc"/><br/>
                                 Hôtel tout bleu et blanc<br/>
-                                Nuit à partir de 68€
+                                Nuit à partir de 68€<br/>
+                                <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="far fa-star"></i>
                             </a>
                         </p>
                     </div>
@@ -232,7 +240,7 @@
                 </div>
             </section>
             <footer>
-                <div>
+                <div class="position">
                     <h5>
                         À propos
                     </h5>
@@ -248,7 +256,7 @@
                         </li>
                     </ul>
                 </div>
-                <div>
+                <div class="position">
                     <h5>
                         Nos hébergement
                     </h5>
@@ -261,7 +269,7 @@
                         </li>
                     </ul>
                 </div>
-                <div>
+                <div class="position">
                     <h5>
                         Assistance
                     </h5>
