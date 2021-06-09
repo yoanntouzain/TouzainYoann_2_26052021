@@ -39,44 +39,44 @@
                 <p id="sous-titre">
                     En plein centre ville ou en pleine nature
                 </p>
-                <form method="POST" action="traitement.php">
-                    <p>
+                <div id="contener_rechercher">
+                    <div>
+                        <form method="POST" action="traitement.php">
+                    </div>
+                    <div>
                         <i id="position" class="fas fa-map-marker-alt"></i>
-                        <input type="text" name="rechercher" id="rechercher" maxlength="30" value="Marseille,France"/>
+                    </div>
+                    <div>
+                        <input type="text" id="form_recherche" maxlength="30" value="Marseille,France"/>
+                    </div>
+                    <div>
                         <input type="submit" value="Rechercher" id="bouton"/>
-                    </p>
-                </form>
+                    </div>
+                    </form>
+                </div>
             </div>
             <div id="filtre">
-                <ul>
-                    <legend>
+                <div>
+                    <h2>
                         Filtres
-                    </legend>
-                    <li>
-                        <a id="economique" href="#">
-                            Économique
-                        </a>
-                    </li>
-                    <i id="billet" class="fas fa-money-bill-wave"></i>
-                    <li>
-                        <a id="familial" href="#">
-                            Familial
-                        </a>
-                    </li>
-                    <i id="personne" class="fas fa-child"></i>
-                    <li>
-                        <a id="romantique" href="#">
-                            Romantique
-                        </a>
-                    </li>
-                    <i id="coeur" class="fas fa-heart"></i>
-                    <li>
-                        <a id="animaux" href="#">
-                            Animaux autorisés
-                        </a>
-                    </li>
-                    <i id="chien" class="fas fa-dog"></i>
-                </ul>
+                    </h2>
+                </div>
+                <a href="#"class="test">
+                    <i class="fas fa-money-bill-wave"></i>
+                    Économique
+                </a>
+                <a href="#"class="test">
+                    <i class="fas fa-child"></i>
+                    Familial
+                </a>
+                <a href="#" class="test">
+                    <i class="fas fa-heart"></i>
+                    Romantique
+                </a>
+                <a href="#" class="test">
+                    <i class="fas fa-dog"></i>
+                    Animaux autorisés
+                </a>
             </div>
             <p id="information">
                 <i id="info" class="fas fa-info"></i>
