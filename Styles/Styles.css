@@ -1,199 +1,159 @@
-/*font*/
-@font-face {
-    font-family: 'Raleway-Medium';
-    src: url('Fonts/Raleway/Raleway-Medium.ttf');
-    font-weight:normal;
-    font-size: normal;
-}
-/*site*/
-body {
-    font-family: 'Raleway-Medium';
-}
-.contaire_body {
-    width: 1440px;
-}
-header, #recherche_hebergement, #filtre, #info, section, .position {
-    margin: auto 50px auto 50px;
-}
-/*header*/
-header {
-    display: flex;
-    justify-content: space-between;
-    align-items:flex-end;
-}
-#logo_reservia {
-    display: flex;
-    flex-direction: row;
-    align-items: baseline;
-}
-#logo {
-    width: 98px;
-    height: 48px;
-    margin-top: 30px;
-}
-/*navigation*/
-nav ul {
-    display:flex;
-    list-style-type: none;
-}
-nav a {
-    font-size: 1.05em;
-    text-decoration: none;
-    color: black;
-    margin: 10px;
-    padding-top: 46px;
-    padding-left: 20px;
-    padding-right: 20px;
-}
-#hebergements:focus,#activites:focus {
-    color: #0065FC;
-    border-top: #0065FC solid 2px;
-    padding-top: 46px;
-    padding-left: 20px;
-    padding-right: 20px;
-}
-#inscription {
-    font-weight: bold;
-    color: #0065FC;
-}
-/*div recherche_hebergement*/
-#titre_hebergements {
-    display: flex;
-    font-size: 1.4em;
-    margin-top: 30px;
-    margin-bottom: 2px;
-    font-weight: 900;
-    width: 1360px;
-}
-#sous-titre {
-    display: flex;
-    font-size: 0.98em;
-    margin-top: 4px;
-    margin-bottom: 5px;
-}
-#position {
-    position: absolute;
-    border: 1px solid #f2f2f2;
-    padding: 16px 18px 16px 18px;
-    background-color: #f2f2f2;
-    border-radius: 12px 0px 0px 12px;
-    font-size: 1.15em;
+/*sur les écrans, quand largeur de la fenêtre fait au maximun 1884px*/
+@media screen {
+    /*font*/
+    @font-face {
+        font-family: 'Raleway-Medium';
+        src: url('Fonts/Raleway/Raleway-Medium.ttf');
+        font-weight:normal;
+        font-size: normal;
+    }
+    /*site*/
+    body {
+        font-family: 'Raleway-Medium';
+    }
+    .contaire_body {
+        width: 1440px;
+    }
+    header, #recherche_hebergement, #filtre, #info, section, .position {
+        margin: auto 50px auto 50px;
+    }
+    /*header*/
+    header {
+        display: flex;
+        justify-content: space-between;
+        align-items:flex-end;
+    }
+    #logo_reservia {
+        display: flex;
+        flex-direction: row;
+        align-items: baseline;
+    }
+    #logo {
+        width: 98px;
+        height: 48px;
+        margin-top: 30px;
+    }
+    /*navigation*/
+    nav ul {
+        display:flex;
+        list-style-type: none;
+    }
+    nav a {
+        font-size: 1.05em;
+        text-decoration: none;
+        color: black;
+        margin: 10px;
+        padding-top: 48px;
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+    #hebergements:focus,#activites:focus {
+        color: #0065FC;
+        border-top: #0065FC solid 2px;
+        padding-top: 48px;
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+    #inscription {
+        font-weight: bold;
+        color: #0065FC;
+    }
+    /*div recherche_hebergement*/
+    #titre_hebergements {
+        display: flex;
+        font-size: 1.4em;
+        margin-top: 30px;
+        margin-bottom: 2px;
+        font-weight: 900;
+        width: 1360px;
+    }
+    #sous-titre {
+        display: flex;
+        font-size: 0.98em;
+        margin-top: 4px;
+        margin-bottom: 5px;
+    }
+    #contener_rechercher {
+        display: flex;
+        margin-top: 17px;
+    }
+    #position {
+        border: 1px solid #f2f2f2;
+        padding: 16px 18px 16px 18px;
+        background-color: #f2f2f2;
+        border-radius: 16px 0px 0px 16px;
+        font-size: 1.15em;
 
-}
-#rechercher {
-    position: absolute;
-    border: 1px solid #f2f2f2;
-    padding: 14px 6px 14px 20px;
-    left: 107px;
-    font-size: 1.15em;
-    width: 210px;
-    font-weight: bold;
-    font-family: 'Raleway-Medium';
-}
-#bouton {
-    position: absolute;
-    border: 1px solid #0065FC;
-    padding: 14px 14px 14px 14px;
-    background-color: #0065FC;
-    border-radius: 0px 12px 12px 0px;
-    color: #ffff;
-    left: 345px;
-    font-size: 1.15em;
-    width: 130px;
-    top: 181.5px;
-    font-family: 'Raleway-Medium';
-}
-/*Filtres*/
-#filtre {
-    display: flex;
-    position: relative;
-    top: 25px;
-}
-#filtre ul {
-    display: flex;
-    list-style-type: none;
-    padding-left: 0px;
-}
-#filtre a, legend, #filtre i {
-    margin: 10px;
-    font-weight: 800;
-    text-decoration: none;
-    text-align: center;
-    font-size: 1em;
-    color: black;
-}
-legend {
-    padding-top: 36px;
-    margin-left: 0px;
-    font-size: 1.17em;
-}
-#filtre i {
-    color: #0065FC;
-    background-color: #deebff;
-    border: 1px solid #DEEBFF;
-    border-radius: 100%;
-    padding: 11px 11px 11px 11px;
-    margin: 0px;
-    font-size: 1.17em;
-}
-#filtre a {
-    border: 3px solid #f2f2f2;
-    padding: 8px 22px 9px 47px;
-    border-radius: 20px 20px 20px 20px;
-    font-size: 1.17em;
-}
-#filtre a:hover {
-    background-color: black;
-    color: #ffff;
-    font-weight: bold;
-}
-#billet {
-    position: absolute;
-    top: 54.5px;
-    left: 95px;
-}
-#economique {
-    position: absolute;
-    top: 42px;
-    left: 90px;
-}
-#personne {
-    position: absolute;
-    top: 54.5px;
-    left: 315px;
-}
-#familial {
-    position: absolute;
-    top: 42px;
-    left: 310px;
-}
-#coeur {
-    position: absolute;
-    top: 54.5px;
-    left: 495px;
-}
-#romantique {
-    position: absolute;
-    top: 42px;
-    left: 490px;
-}
-#chien {
-    position: absolute;
-    top: 54.5px;
-    left: 705px;
-}
-#animaux {
-    position: absolute;
-    top: 42px;
-    left: 700px;
-}
-#information {
-    display: flex;
-    margin-top: 40px;
-}
-#info {
-    color: #0065FC;
-    border: 1px solid grey;
-    border-radius: 100%;
-    padding: 7px 12px 7px 12px;
+    }
+    #form_recherche {
+        border: 1px solid #f2f2f2;
+        padding: 14px 6px 14px 20px;
+        left: 107px;
+        font-size: 1.15em;
+        width: 203px;
+        font-weight: bold;
+        font-family: 'Raleway-Medium';
+    }
+    #bouton {
+        border: 1px solid #0065FC;
+        padding: 14px 14px 14px 14px;
+        background-color: #0065FC;
+        border-radius: 0px 16px 16px 0px;
+        color: #ffff;
+        left: 345px;
+        font-size: 1.14em;
+        width: 130px;
+        top: 181.5px;
+        font-family: 'Raleway-Medium';
+    }
+    /*Filtres*/
+    #filtre {
+        display: flex;
+        align-items: center;
+        margin-top: 15px;
+    }
+    #filtre div {
+        font-weight: bold;
+        font-size: 0.8em;
+    }
+    #filtre a, #filtre i {
+        text-align: center;
+        font-size: 1.17em;
+    }
+    #filtre i {
+        color: #0065FC;
+        background-color: #deebff;
+        border: 1px solid #DEEBFF;
+        border-radius: 100%;
+        padding: 11px 11px 11px 11px;
+        margin: 0px;
+    }
+    .test:hover {
+        background: #deebff;
+        font-weight: bold;
+    }
+    .test {
+        border: 3px solid #f2f2f2;
+        border-radius: 40px 40px 40px 40px ;
+        border-left: none;
+        padding: 0px 15px 0px 1px;
+        margin: 15px;
+        color: black;
+        font-weight: 800;
+        text-decoration: none;
+        outline: none;
+    }
+    #filtre div {
+        margin: auto 20px auto 15px;
+    }
+    #information {
+        display: flex;
+        margin-top: 40px;
+    }
+    #info {
+        color: #0065FC;
+        border: 1px solid grey;
+        border-radius: 100%;
+        padding: 7px 12px 7px 12px;
+    }
 }
