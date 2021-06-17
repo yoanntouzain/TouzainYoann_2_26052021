@@ -486,7 +486,7 @@
     }
     /*footer*/
     footer {
-        background: grey;
+        background: #f2f2f2;
     }
     .position {
         display: flex;
