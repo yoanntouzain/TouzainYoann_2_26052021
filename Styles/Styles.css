@@ -1,518 +1,580 @@
-/*sur les écrans, quand largeur de la fenêtre fait au maximun 1440px*/
-@media screen {
-    /*font*/
-    @font-face {
-        font-family: 'Raleway-Medium';
-        src: url('Fonts/Raleway/Raleway-Medium.ttf');
-        font-weight:normal;
-        font-size: normal;
-    }
-    @font-face {
-        font-family: 'Raleway-Bold';
-        src: url('Fonts/Raleway/Raleway-Bold.ttf');
-        font-weight: normal;
-        font-size: normal;
-    }
-    @font-face {
-        font-family: 'Raleway-BoldItalic';
-        src: url('Fonts/Raleway/Raleway-BoldItalic.ttf');
-        font-weight: normal;
-        font-size: normal;
-    }
-    @font-face {
-        font-family: 'Raleway-ExtraBold';
-        src: url('Fonts/Raleway/Raleway-ExtraBold.ttf');
-        font-weight: normal;
-        font-size: normal;
-    }
-    @font-face {
-        font-family: 'Raleway-ExtraBoldItalic';
-        src: url('Fonts/Raleway/Raleway-ExtraBoldItalic.ttf');
-        font-weight: normal;
-        font-size: normal;
-    }
-    @font-face {
-        font-family: 'Raleway-Black';
-        src: url('Fonts/Raleway/Raleway-Black.ttf');
-        font-weight: normal;
-        font-size: normal;
-    }
-    @font-face {
-        font-family: 'Raleway-BlackItalic';
-        src: url('Fonts/Raleway/Raleway-BlackItalic.ttf');
-        font-weight: normal;
-        font-size: normal;
-    }
-    @font-face {
-        font-family: 'Raleway-ExtraLight';
-        src: url('Fonts/Raleway/Raleway-ExtraLight.ttf');
-        font-weight: normal;
-        font-size: normal;
-    }
-    @font-face {
-        font-family: 'Raleway-ExtraLightItalic';
-        src: url('Fonts/Raleway/Raleway-ExtraLightItalic.ttf');
-        font-weight: normal;
-        font-size: normal;
-    }
-    @font-face {
-        font-family: 'Raleway-Italic';
-        src: url('Fonts/Raleway/Raleway-Italic.ttf');
-        font-weight: normal;
-        font-size: normal;
-    }
-    @font-face {
-        font-family: 'Raleway-Light';
-        src: url('Fonts/Raleway/Raleway-Light.ttf');
-        font-weight: normal;
-        font-size: normal;
-    }
-    @font-face {
-        font-family: 'Raleway-LightItalic';
-        src: url('Fonts/Raleway/Raleway-LightItalic.ttf');
-        font-weight: normal;
-        font-size: normal;
-    }
-    @font-face {
-        font-family: 'Raleway-MediumItalic';
-        src: url('Fonts/Raleway/Raleway-MediumItalic.ttf');
-        font-weight: normal;
-        font-size: normal;
-    }
-    @font-face {
-        font-family: 'Raleway-Regular';
-        src: url('Fonts/Raleway/Raleway-Regular.ttf');
-        font-weight: normal;
-        font-size: normal;
-    }
-    @font-face {
-        font-family: 'Raleway-SemiBold';
-        src: url('Fonts/Raleway/Raleway-SemiBold.ttf');
-        font-weight: normal;
-        font-size: normal;
-    }
-    @font-face {
-        font-family: 'Raleway-SemiBoldItalic';
-        src: url('Fonts/Raleway/Raleway-SemiBoldItalic.ttf');
-        font-weight: normal;
-        font-size: normal;
-    }
-    @font-face {
-        font-family: 'Raleway-Thin';
-        src: url('Fonts/Raleway/Raleway-Thin.ttf');
-        font-weight: normal;
-        font-size: normal;
-    }
-    @font-face {
-        font-family: 'Raleway-ThinItalic';
-        src: url('Fonts/Raleway/Raleway-ThinItalic.ttf');
-        font-weight: normal;
-        font-size: normal;
-    }
+/*font*/
+@font-face {
+    font-family: 'Raleway-Medium';
+    src: url('Fonts/Raleway/Raleway-Medium.ttf');
+    font-weight:normal;
+    font-size: normal;
+}
+@font-face {
+    font-family: 'Raleway-Bold';
+    src: url('Fonts/Raleway/Raleway-Bold.ttf');
+    font-weight: normal;
+    font-size: normal;
+}
+@font-face {
+    font-family: 'Raleway-BoldItalic';
+    src: url('Fonts/Raleway/Raleway-BoldItalic.ttf');
+    font-weight: normal;
+    font-size: normal;
+}
+@font-face {
+    font-family: 'Raleway-ExtraBold';
+    src: url('Fonts/Raleway/Raleway-ExtraBold.ttf');
+    font-weight: normal;
+    font-size: normal;
+}
+@font-face {
+    font-family: 'Raleway-ExtraBoldItalic';
+    src: url('Fonts/Raleway/Raleway-ExtraBoldItalic.ttf');
+    font-weight: normal;
+    font-size: normal;
+}
+@font-face {
+    font-family: 'Raleway-Black';
+    src: url('Fonts/Raleway/Raleway-Black.ttf');
+    font-weight: normal;
+    font-size: normal;
+}
+@font-face {
+    font-family: 'Raleway-BlackItalic';
+    src: url('Fonts/Raleway/Raleway-BlackItalic.ttf');
+    font-weight: normal;
+    font-size: normal;
+}
+@font-face {
+    font-family: 'Raleway-ExtraLight';
+    src: url('Fonts/Raleway/Raleway-ExtraLight.ttf');
+    font-weight: normal;
+    font-size: normal;
+}
+@font-face {
+    font-family: 'Raleway-ExtraLightItalic';
+    src: url('Fonts/Raleway/Raleway-ExtraLightItalic.ttf');
+    font-weight: normal;
+    font-size: normal;
+}
+@font-face {
+    font-family: 'Raleway-Italic';
+    src: url('Fonts/Raleway/Raleway-Italic.ttf');
+    font-weight: normal;
+    font-size: normal;
+}
+@font-face {
+    font-family: 'Raleway-Light';
+    src: url('Fonts/Raleway/Raleway-Light.ttf');
+    font-weight: normal;
+    font-size: normal;
+}
+@font-face {
+    font-family: 'Raleway-LightItalic';
+    src: url('Fonts/Raleway/Raleway-LightItalic.ttf');
+    font-weight: normal;
+    font-size: normal;
+}
+@font-face {
+    font-family: 'Raleway-MediumItalic';
+    src: url('Fonts/Raleway/Raleway-MediumItalic.ttf');
+    font-weight: normal;
+    font-size: normal;
+}
+@font-face {
+    font-family: 'Raleway-Regular';
+    src: url('Fonts/Raleway/Raleway-Regular.ttf');
+    font-weight: normal;
+    font-size: normal;
+}
+@font-face {
+    font-family: 'Raleway-SemiBold';
+    src: url('Fonts/Raleway/Raleway-SemiBold.ttf');
+    font-weight: normal;
+    font-size: normal;
+}
+@font-face {
+    font-family: 'Raleway-SemiBoldItalic';
+    src: url('Fonts/Raleway/Raleway-SemiBoldItalic.ttf');
+    font-weight: normal;
+    font-size: normal;
+}
+@font-face {
+    font-family: 'Raleway-Thin';
+    src: url('Fonts/Raleway/Raleway-Thin.ttf');
+    font-weight: normal;
+    font-size: normal;
+}
+@font-face {
+    font-family: 'Raleway-ThinItalic';
+    src: url('Fonts/Raleway/Raleway-ThinItalic.ttf');
+    font-weight: normal;
+    font-size: normal;
+}
     /*site*/
-    body {
-        font-family: 'Raleway-Medium';
-        margin: 0px;
+body {
+    font-family: 'Raleway-Medium';
+    margin: auto;
+}
+.contaire_body {
+    width: auto;
+}
+header, #recherche_hebergement, #filtre, #information, section {
+    margin: auto 50px auto 50px;
+}
+h1, h2 {
+    font-family: 'Raleway-ExtraBold';
+}
+/*header*/
+header {
+    display: flex;
+    justify-content: flex-end;
+}
+header div {
+    padding-top: 30px;
+}
+#logo_reservia {
+    width: 98px;
+    height: 48px;
+    justify-self: flex-start;
+    margin-right: auto;
+}
+#logo {
+    width: 100%;
+    height: 100%;
+}
+.div_hebergements_head, .div_activites_head, .div_inscription_head {
+    font-size: 1.05em;
+    padding-left: 8px;
+    padding-right: 8px;
+    padding-top: 40px;
+}
+header a {
+    color: black;
+    text-decoration: none;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+#hebergements:focus,#activites:focus {
+    color: #0065FC;
+    border-top: #0065FC solid 2px;
+    padding-top: 38px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+#inscription {
+    font-weight: bold;
+    color: #0065FC;
+}
+/*navigation
+nav ul {
+    display:flex;
+    list-style-type: none;
+}
+nav a {
+    font-size: 1.05em;
+    text-decoration: none;
+    color: black;
+    margin: 10px;
+    padding-top: 48px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+#hebergements:focus,#activites:focus {
+    color: #0065FC;
+    border-top: #0065FC solid 2px;
+    padding-top: 48px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+#inscription {
+    font-weight: bold;
+    color: #0065FC;
+}*/
+/*div recherche_hebergement*/
+#titre_hebergements {
+    display: flex;
+    font-size: 1.34em;
+    margin-top: 40px;
+    margin-bottom: 2px;
+}
+#sous-titre {
+    display: flex;
+    font-size: 0.98em;
+    margin-top: 4px;
+    margin-bottom: 4px;
+    font-family: 'Raleway-Regular';
+}
+#contener_rechercher {
+    display: flex;
+    margin-top: 18px;
+}
+.div_form form {
+    display: flex;
+    align-items: flex-start;
+}
+#position {
+    border: 1px solid #f2f2f2;
+    padding: 18px 18px 18px 18px;
+    background-color: #f2f2f2;
+    border-radius: 16px 0px 0px 16px;
+    font-size: 1.05em;
+    margin-top: 0px;
+
+}
+#formulaire_recherche {
+    border: 1px solid #f2f2f2;
+    padding: 16px 6px 16px 20px;
+    font-size: 1.05em;
+    width: 203px;
+    font-family: 'Raleway-ExtraBold';
+}
+#bouton {
+    border: 1px solid #0065FC;
+    padding: 16px 22px 16px 22px;
+    background-color: #0065FC;
+    border-radius: 0px 16px 16px 0px;
+    color: #ffff;
+    font-size: 1.05em;
+    top: 181.5px;
+    font-family: 'Raleway-Medium';
+    font-weight: bold;
+}
+/*Filtres*/
+#filtre {
+    display: flex;
+    align-items: center;
+    margin-top: 15px;
+    font-family: 'Raleway-ExtraBold';
+}
+#filtre div {
+    font-size: 0.7em;
+}
+#filtre a, #filtre i {
+    text-align: center;
+}
+#filtre i {
+    color: #0065FC;
+    background-color: #deebff;
+    border: 1px solid #deebff;
+    border-radius: 25px 25px 25px 25px;
+    margin: 0px 8px 0px 0px;
+    font-size: 1.13em;
+}
+#billet {
+    padding: 14px 14px 14px 14px;
+}
+#personnage {
+    padding: 14px 17px 14px 17px;
+}
+#coeur {
+    padding: 14px 14px 14px 14px;
+}
+#chien {
+    padding: 14px 14px 14px 14px;
+}
+.icone_filtre:hover {
+    background: #deebff;
+    font-weight: bold;
+}
+.icone_filtre {
+    border: 3px solid #f2f2f2;
+    border-radius: 40px 40px 40px 40px ;
+    border-left: none;
+    padding: 0px 21px 0px 0px;
+    margin: 15px;
+    color: black;
+    font-weight: 800;
+    text-decoration: none;
+    outline: none;
+    font-size: 1.05em;
+}
+#filtre div {
+    margin: auto 20px auto 15px;
+}
+/*Information*/
+#information {
+    display: flex;
+    align-items: center;
+    font-family: 'Raleway-Regular';
+}
+#info {
+    color: #0065FC;
+    border: 1px solid grey;
+    border-radius: 25px 25px 25px 25px;
+    padding: 5.5px 10px 5.5px 10px;
+    margin-left:15px;
+    margin-right: 5px;
+}
+#information p {
+    font-size: 0.98em;
+    margin-bottom: 35px;
+}
+/*Article Hébergment à Marseille*/
+section {
+    display: flex;
+}
+.article_hebergement, aside {
+    text-align: justify;
+    border: 0px solid #f2f2f2;
+    border-radius: 25px 25px 25px 25px;
+    background: #f2f2f2;
+    color: black;
+}
+.article_hebergement {
+    margin-right: 40px;
+    flex: 3.5;
+}
+.article_hebergement h1 {
+    font-size: 1.4em;
+    margin: 40px 40px 14px 40px;
+}
+#div_hebergement {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content:space-around;
+}
+.lien_blanc_heb {
+    background: #ffff;
+    margin: 13px;
+    padding: 4px;
+    border-radius: 25px 25px 25px 25px;
+    box-shadow: 2px 0px 10px 0px rgb(180, 180, 180);
+    text-decoration: none;
+    outline: none;
+}
+.div_img_heb {
+    width: 240px;
+    height: 118px;
+}
+.images_heb {
+    width: 100%;
+    height: 100%;
+    border: 0px solid #ffff;
+    border-radius: 25px 25px 0px 0px;
+}
+.div_description_heb {
+    margin-left: 12px;
+}
+.article_hebergement h2 {
+    font-size: 1em;
+    color: black;
+    margin-bottom: 0px;
+    margin-top: 7px;
+}
+.article_hebergement p {
+    font-size: 0.9em;
+    color: black;
+    margin-top: 3px;
+    margin-bottom: 4px;
+}
+.article_hebergement i {
+    margin-bottom: 8px;
+    font-size: 0.7em;
+}
+.star_blue {
+    color: #0065FC;
+}
+.star_grey {
+    color: grey;
+    opacity: 30%;
+}
+#afficher_plus {
+    font-size: 1.1em;
+    font-family: 'Raleway-ExtraBold';
+    margin: 25px 40px 30px 40px;
+}
+/*Aside*/
+aside {
+    flex: 1.4;
+}
+.titre_aside {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: space-between;
+    margin-top: 25px;
+}
+aside h1 {
+    margin-left: 40px;
+    font-size: 1.4em;
+}
+aside .icone_courbe {
+    margin-right: 40px;
+    font-size: 1.5em;
+}
+.les_plus_populaires {
+    display: flex;
+    flex-direction: column;
+    margin-left: 30px;
+    margin-right: 30px;
+    margin-bottom: 0px;
+}
+.lien_blanc_pop {
+    background: #ffff;
+    margin-bottom: 30px;
+    padding: 4px;
+    border-radius: 25px 25px 25px 25px;
+    box-shadow: 2px 0px 10px 0px rgb(180, 180, 180);
+    text-decoration: none;
+    outline: none;
+}
+.div_blanc_pop {
+    display: flex;
+}
+.div_img_pop {
+    width: 130px;
+    height: 137px;
+}
+.images_pop {
+    width: 100%;
+    height: 100%;
+    border: 0px solid #ffff;
+    border-radius: 25px 0px 0px 25px;
+}
+.div_description_pop {
+    margin-right: 45px;
+    margin-left: 20px;
+}
+.div_description_pop h2 {
+    font-size: 1em;
+    font-weight: bold;
+    color: black;
+    margin-bottom: 0px;
+    white-space: nowrap;
+}
+.div_description_pop p {
+    font-size: 0.9em;
+    color: black;
+    margin-top: 3px;
+    margin-bottom: 40px;
+    white-space: nowrap;
+}
+.div_description_pop span {
+    font-size: 0.7em;
+    padding: 0px;
+    margin-bottom: 20px;
+}
+/*Article Activités à Marseille*/
+#activite_a_marseille {
+    flex-direction: column;
+    margin-top: 60px;
+    margin-bottom: 66px;
+}
+.titre_activite {
+    font-size: 1.4em;
+}
+.div_activite {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.lien_blanc_act {
+    border: 0px solid #ffff;
+    border-radius: 25px 25px 25px 25px;
+    box-shadow: 0px 4px 10px 4px #f2f2f2;
+    text-decoration: none;
+    outline: none;
+}
+.div2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.div_img_act1 {
+    width: 304px;
+    height: 391px;
+}
+.div_img_act2 {
+    width: 304px;
+    height: 184px;
+}
+.div_img_act3 {
+    width: 302px;
+    height: 110px;
+}
+.div_img_act4 {
+    width: 305px;
+    height: 141px;
+}
+.div_img_act5 {
+    width: 306px;
+    height: 155px;
+}
+.images_act {
+    width: 100%;
+    height: 100%;
+    border-radius: 25px 25px 0px 0px;
+}
+.lien_blanc_act h2 {
+    margin-left: 25px;
+    font-size: 1em;
+    color: black;
+}
+/*footer*/
+footer {
+    background: #f2f2f2;
+}
+.position {
+    display: flex;
+    padding-top: 22px;
+    margin-left: 0px;
+    margin-right: 210px;
+    padding-bottom: 24px;
+    margin-top: 0px;
+}
+.div_footer {
+    display: flex;
+    align-items: flex-start;
+    margin-left: 50px;
+    margin-right: 100px;
+}
+.ul_footer {
+    list-style-type: none;
+    padding-left: 0px;
+}
+.ul_footer legend {
+    font-weight: bold;
+    font-size: 1.2em;
+    margin-bottom: 20px;
+}
+.ul_footer li {
+    font-size: 1.05em;
+    padding-bottom: 14px;
+}
+        /*Pour une largueur max de 375px (version téléphone)*/
+@media screen and (max-width: 375px) {
+    .container_body {
+        width: auto;
     }
-    .contaire_body {
-        width: 1440px;
-    }
-    header, #recherche_hebergement, #filtre, #information, section {
-        margin: auto 50px auto 50px;
-    }
-    h1, h2 {
-        font-family: 'Raleway-ExtraBold';
-    }
-    /*header*/
+        /*header*/
     header {
         display: flex;
-        justify-content: space-between;
-        align-items:flex-end;
-    }
-    #logo_reservia {
-        display: flex;
-        align-items: baseline;
-        width: 98px;
-        height: 48px;
-        margin-top: 30px;
-    }
-    #logo {
-        width: 100%;
-        height: 100%;
-    }
-    /*navigation*/
-    nav ul {
-        display:flex;
-        list-style-type: none;
-    }
-    nav a {
-        font-size: 1.05em;
-        text-decoration: none;
-        color: black;
-        margin: 10px;
-        padding-top: 48px;
-        padding-left: 20px;
-        padding-right: 20px;
-    }
-    #hebergements:focus,#activites:focus {
-        color: #0065FC;
-        border-top: #0065FC solid 2px;
-        padding-top: 48px;
-        padding-left: 20px;
-        padding-right: 20px;
-    }
-    #inscription {
-        font-weight: bold;
-        color: #0065FC;
-    }
-    /*div recherche_hebergement*/
-    #titre_hebergements {
-        display: flex;
-        font-size: 1.34em;
-        margin-top: 40px;
-        margin-bottom: 2px;
-    }
-    #sous-titre {
-        display: flex;
-        font-size: 0.98em;
-        margin-top: 4px;
-        margin-bottom: 4px;
-        font-family: 'Raleway-Regular';
-    }
-    #contener_rechercher {
-        display: flex;
-        margin-top: 18px;
-    }
-    .div_form form {
-        display: flex;
-        align-items: flex-start;
-    }
-    #position {
-        border: 1px solid #f2f2f2;
-        padding: 18px 18px 18px 18px;
-        background-color: #f2f2f2;
-        border-radius: 16px 0px 0px 16px;
-        font-size: 1.05em;
-        margin-top: 0px;
-
-    }
-    #formulaire_recherche {
-        border: 1px solid #f2f2f2;
-        padding: 16px 6px 16px 20px;
-        font-size: 1.05em;
-        width: 203px;
-        font-family: 'Raleway-ExtraBold';
-    }
-    #bouton {
-        border: 1px solid #0065FC;
-        padding: 16px 22px 16px 22px;
-        background-color: #0065FC;
-        border-radius: 0px 16px 16px 0px;
-        color: #ffff;
-        font-size: 1.05em;
-        top: 181.5px;
-        font-family: 'Raleway-Medium';
-        font-weight: bold;
-    }
-    /*Filtres*/
-    #filtre {
-        display: flex;
-        align-items: center;
-        margin-top: 15px;
-        font-family: 'Raleway-ExtraBold';
-    }
-    #filtre div {
-        font-size: 0.7em;
-    }
-    #filtre a, #filtre i {
-        text-align: center;
-    }
-    #filtre i {
-        color: #0065FC;
-        background-color: #deebff;
-        border: 1px solid #deebff;
-        border-radius: 25px 25px 25px 25px;
-        margin: 0px 8px 0px 0px;
-        font-size: 1.13em;
-    }
-    #billet {
-        padding: 14px 14px 14px 14px;
-    }
-    #personnage {
-        padding: 14px 17px 14px 17px;
-    }
-    #coeur {
-        padding: 14px 14px 14px 14px;
-    }
-    #chien {
-        padding: 14px 14px 14px 14px;
-    }
-    .icone_filtre:hover {
-        background: #deebff;
-        font-weight: bold;
-    }
-    .icone_filtre {
-        border: 3px solid #f2f2f2;
-        border-radius: 40px 40px 40px 40px ;
-        border-left: none;
-        padding: 0px 21px 0px 0px;
-        margin: 15px;
-        color: black;
-        font-weight: 800;
-        text-decoration: none;
-        outline: none;
-        font-size: 1.05em;
-    }
-    #filtre div {
-        margin: auto 20px auto 15px;
-    }
-    /*Information*/
-    #information {
-        display: flex;
-        align-items: center;
-        font-family: 'Raleway-Regular';
-    }
-    #info {
-        color: #0065FC;
-        border: 1px solid grey;
-        border-radius: 25px 25px 25px 25px;
-        padding: 5.5px 10px 5.5px 10px;
-        margin-left:15px;
-        margin-right: 5px;
-    }
-    #information p {
-        font-size: 0.98em;
-        margin-bottom: 35px;
-    }
-    /*Article Hébergment à Marseille*/
-    section {
-        display: flex;
-    }
-    .article_hebergement, aside {
-        text-align: justify;
-        border: 0px solid #f2f2f2;
-        border-radius: 25px 25px 25px 25px;
-        background: #f2f2f2;
-        color: black;
-    }
-    .article_hebergement {
-        margin-right: 40px;
-        flex: 3.5;
-    }
-    .article_hebergement h1 {
-        font-size: 1.4em;
-        margin: 40px 40px 14px 40px;
-    }
-    #div_hebergement {
-        display: flex;
         flex-wrap: wrap;
-        justify-content: center;
+        margin: 20px 20px 20px 20px;
     }
-    .lien_blanc_heb {
-       background: #ffff;
-       margin: 13px;
-       padding: 4px;
-       border-radius: 25px 25px 25px 25px;
-       box-shadow: 2px 0px 10px 0px rgb(180, 180, 180);
-       text-decoration: none;
-       outline: none;
-    }
-    .div_img_heb {
-        width: 240px;
-        height: 118px;
-    }
-    .images_heb {
-        width: 100%;
-        height: 100%;
-        border: 0px solid #ffff;
-        border-radius: 25px 25px 0px 0px;
-    }
-    .div_description_heb {
-        margin-left: 12px;
-    }
-    .article_hebergement h2 {
-        font-size: 1em;
-        color: black;
-        margin-bottom: 0px;
-        margin-top: 7px;
-    }
-    .article_hebergement p {
-        font-size: 0.9em;
-        color: black;
-        margin-top: 3px;
-        margin-bottom: 4px;
-    }
-    .article_hebergement i {
-        margin-bottom: 8px;
-        font-size: 0.7em;
-    }
-    .star_blue {
-        color: #0065FC;
-    }
-    .star_grey {
-        color: grey;
-        opacity: 30%;
-    }
-    #afficher_plus {
-        font-size: 1.1em;
-        font-family: 'Raleway-ExtraBold';
-        margin: 25px 40px 30px 40px;
-    }
-    /*Aside*/
-    aside {
-        flex: 1.4;
-    }
-    .titre_aside {
-        display: flex;
-        align-items: center;
-        text-align: center;
-        justify-content: space-between;
-        margin-top: 25px;
-    }
-    aside h1 {
-        margin-left: 40px;
-        font-size: 1.4em;
-    }
-    aside .icone_courbe {
-        margin-right: 40px;
-        font-size: 1.5em;
-    }
-    .les_plus_populaires {
-        display: flex;
-        flex-direction: column;
-        margin-left: 30px;
-        margin-right: 30px;
-        margin-bottom: 0px;
-    }
-    .lien_blanc_pop {
-       background: #ffff;
-       margin-bottom: 30px;
-       padding: 4px;
-       border-radius: 25px 25px 25px 25px;
-       box-shadow: 2px 0px 10px 0px rgb(180, 180, 180);
-       text-decoration: none;
-       outline: none;
-    }
-    .div_blanc_pop {
+    nav {
         display: flex;
     }
-    .div_img_pop {
-        width: 130px;
-        height: 137px;
-    }
-    .images_pop {
-        width: 100%;
-        height: 100%;
-        border: 0px solid #ffff;
-        border-radius: 25px 0px 0px 25px;
-    }
-    .div_description_pop {
-        margin-right: 45px;
-        margin-left: 20px;
-    }
-    .div_description_pop h2 {
-        font-size: 1em;
-        font-weight: bold;
-        color: black;
-        margin-bottom: 0px;
-        white-space: nowrap;
-    }
-    .div_description_pop p {
-        font-size: 0.9em;
-        color: black;
-        margin-top: 3px;
-        margin-bottom: 40px;
-        white-space: nowrap;
-    }
-    .div_description_pop span {
-        font-size: 0.7em;
-        padding: 0px;
-        margin-bottom: 20px;
-    }
-    /*Article Activités à Marseille*/
-    #activite_a_marseille {
-        flex-direction: column;
-        margin-top: 60px;
-        margin-bottom: 66px;
-    }
-    .titre_activite {
-        font-size: 1.4em;
-    }
-    .div_activite {
-        display: flex;
-        justify-content: space-between;
-    }
-    .lien_blanc_act {
-        border: 0px solid #ffff;
-        border-radius: 25px 25px 25px 25px;
-        box-shadow: 0px 4px 10px 4px #f2f2f2;
-        text-decoration: none;
-        outline: none;
-    }
-    .div2 {
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
-    }
-    .div_img_act1 {
-        width: 304px;
-        height: 391px;
-    }
-    .div_img_act2 {
-        width: 304px;
-        height: 184px;
-    }
-    .div_img_act3 {
-        width: 302px;
-        height: 110px;
-    }
-    .div_img_act4 {
-        width: 305px;
-        height: 141px;
-    }
-    .div_img_act5 {
-        width: 306px;
-        height: 155px;
-    }
-    .images_act {
-        width: 100%;
-        height: 100%;
-        border-radius: 25px 25px 0px 0px;
-    }
-    .lien_blanc_act h2 {
-        margin-left: 25px;
-        font-size: 1em;
-        color: black;
-    }
-    /*footer*/
-    footer {
-        background: #f2f2f2;
-    }
-    .position {
-        display: flex;
-        padding-top: 22px;
-        margin-left: 0px;
-        margin-right: 210px;
-        padding-bottom: 24px;
-        margin-top: 0px;
-    }
-    .div_footer {
-        display: flex;
-        align-items: flex-start;
-        margin-left: 50px;
-        margin-right: 100px;
-    }
-    .ul_footer {
-        list-style-type: none;
+    nav ul {
+        display: block;
         padding-left: 0px;
+        flex-wrap: wrap-reverse;
     }
-    .ul_footer legend {
-        font-weight: bold;
-        font-size: 1.2em;
-        margin-bottom: 20px;
+    nav li {
+        display: block;
     }
-    .ul_footer li {
-        font-size: 1.05em;
-        padding-bottom: 14px;
+    
+
+
+
+
+
+
+
+
+
+
+
+    /*activité*/
+    .div_img_heb, .div_img_pop, .div_img_act1, .div_img_act2, .div_img_act3, .div_img_act4, .div_img_act5 {
+        width: 326px;
+        height: 114px;
     }
 }
