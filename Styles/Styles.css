@@ -462,8 +462,6 @@ aside .icone_courbe {
 }
 .div_activite {
     display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
 }
 .lien_blanc_act {
     border: 0px solid #ffff;
@@ -471,12 +469,35 @@ aside .icone_courbe {
     box-shadow: 0px 4px 10px 4px #f2f2f2;
     text-decoration: none;
     outline: none;
+    margin-left: 2%;
+    margin-right: 2%;
 }
 .div2 {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
 }
+.div_img_act1 {
+    width: 100%;
+    height: 391px;
+}
+.div_img_act2 {
+    width: 100%;
+    height: 184px;
+}
+.div_img_act3 {
+    width: 100%;
+    height: 110px;
+}
+.div_img_act4 {
+    width: 100%;
+    height: 141px;
+}
+.div_img_act5 {
+    width: 100%;
+    height: 155px;
+}
+/*
 .div_img_act1 {
     width: 304px;
     height: 391px;
@@ -496,11 +517,12 @@ aside .icone_courbe {
 .div_img_act5 {
     width: 306px;
     height: 155px;
-}
+}*/
 .images_act {
     width: 100%;
     height: 100%;
     border-radius: 25px 25px 0px 0px;
+    object-fit: cover;
 }
 .lien_blanc_act h2 {
     margin-left: 25px;
