@@ -130,7 +130,8 @@ header div {
     padding-top: 30px;
 }
 #logo_reservia {
-    width: 98px;
+    width: 2%;
+    min-width: 98px;
     height: 48px;
     justify-self: flex-start;
     margin-right: auto;
@@ -189,25 +190,21 @@ nav a {
 }*/
 /*div recherche_hebergement*/
 #titre_hebergements {
-    display: flex;
     font-size: 1.34em;
     margin-top: 40px;
     margin-bottom: 2px;
 }
 #sous-titre {
-    display: flex;
     font-size: 0.98em;
     margin-top: 4px;
     margin-bottom: 4px;
     font-family: 'Raleway-Regular';
 }
 #contener_rechercher {
-    display: flex;
     margin-top: 18px;
 }
 .div_form form {
     display: flex;
-    align-items: flex-start;
 }
 #position {
     border: 1px solid #f2f2f2;
@@ -224,6 +221,9 @@ nav a {
     font-size: 1.05em;
     width: 203px;
     font-family: 'Raleway-ExtraBold';
+}
+.loupe {
+    display: none;
 }
 #bouton {
     border: 1px solid #0065FC;
@@ -541,6 +541,7 @@ aside .icone_courbe {
 /*footer*/
 footer {
     background: #f2f2f2;
+    width: 100%;
 }
 .position {
     display: flex;
@@ -569,40 +570,120 @@ footer {
         /*Pour une largueur max de 375px (version téléphone)*/
 @media screen and (max-width: 375px) {
     .container_body {
-        width: auto;
+        margin: 2% 0% 0% 0%;
+        background:chartreuse ;
+    }
+    header, #recherche_hebergement, #filtre, #information, section {
+        margin: auto 5% auto 5%;
     }
         /*header*/
     header {
         display: flex;
         flex-wrap: wrap;
-        margin: 20px 20px 20px 20px;
+        margin-left: 0%;
+        margin-right: 0%;
     }
-    nav {
+    #logo_reservia:nth-child(1) {
+        order: 1;
+    }
+    .div_hebergements_head:nth-child(2) {
+        order: 3;
+    }
+    .div_activites_head:nth-child(3) {
+        order: 4;
+    }
+    .div_inscription_head:nth-child(4) {
+        order: 2;
+    }
+    .div_inscription_head {
+        padding-top: 45px;
+        padding-right: 0px;
+    }
+    #logo_reservia {
+        margin-left: 5%;
+    }
+    .div_hebergements_head, .div_activites_head {
+        width: 45.7%;
+        text-align: center;
+        border-bottom: 2px solid #f2f2f2;
+        padding-bottom: 10px;
+    }
+    .div_activites_head {
+        width: 45.7%;
+        text-align: center;
+        border-bottom: 2px solid #f2f2f2;
+        padding-bottom: 10px;
+    }
+    #hebergements:focus,#activites:focus {
+        color: #0065FC;
+        border-bottom: #0065FC solid 2px;
+        padding-bottom: 10px;
+    }
+        /*div recherche_hebergement*/
+    #titre_hebergements {
+        font-size: 1.44em;
+        margin-top: 40px;
+        margin-bottom: 2px;
+    }
+    #sous-titre {
+        font-size: 1.05em;
+        margin-top: 4px;
+        margin-bottom: 4px;
+        font-family: 'Raleway-Regular';
+    }
+    #contener_rechercher {
+        margin-top: 38px;
+        margin-right: 1%;
+    }
+    .div_form form {
+        border: 0px solid;
+        background-color: #ffff;
+        border-radius: 16px 16px 16px 16px;
+        width: 100%;
+    }
+    #position {
+        border: 1px solid #f2f2f2;
+        padding: 18px 18px 18px 18px;
+        background-color: #f2f2f2;
+        border-radius: 16px 0px 0px 16px;
+        font-size: 1.2em;
+        margin-top: 0px;
+    }
+    #formulaire_recherche {
+        padding: 16px 10px 16px 20px;
+        font-family: 'Raleway-ExtraBold';
+        font-size: 1.2em;
+    }
+    #bouton {
+        display: none;
+    }
+    .loupe {
+        display: block;
+        border: 1px solid #0065FC;
+        padding: 17px 17px 17px 17px;
+        background-color: #0065FC;
+        border-radius: 16px 16px 16px 16px;
+        color: #ffff;
+        font-size: 1.1em;
+        top: 181.5px;
+        font-family: 'Raleway-Medium';
+        font-weight: bold;
+    }
+    /*Filtre*/
+    #filtre {
+        flex-wrap: wrap;
+    }
+    /*section*/
+    section {
         display: flex;
+        flex-direction: column;
     }
-    nav ul {
-        display: block;
-        padding-left: 0px;
-        flex-wrap: wrap-reverse;
-    }
-    nav li {
-        display: block;
-    }
-    
-
-
-
-
-
-
-
-
-
-
-
     /*activité*/
-    .div_img_heb, .div_img_pop, .div_img_act1, .div_img_act2, .div_img_act3, .div_img_act4, .div_img_act5 {
-        width: 326px;
-        height: 114px;
+    .div_activite {
+        flex-direction: column;
+    }
+    /*footer*/
+    .div_footer {
+        flex-direction: column;
     }
 }
