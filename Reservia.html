@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="fr">
     <head>
         <title>Reservia</title>
         <script src="https://kit.fontawesome.com/2cc0192606.js" crossorigin="anonymous"></script><!--Pour intégrer les icones-->
@@ -39,13 +39,17 @@
                 <div id="contener_rechercher">
                     <div class="div_form">
                         <form method="POST" action="traitement.php">
-                            <div>
+                            <div class="test">
                                 <i id="position" class="fas fa-map-marker-alt"></i>
                             </div>
-                            <div>
+                            <div class="test">
                                 <input type="text" id="formulaire_recherche" maxlength="30" value="Marseille,France"/>
                             </div>
-                            <div>
+                            <div class="test">
+                                <button class="loupe" type="submit">
+                                    <i class="fas fa-search"></i>
+                                    <input type="submit" id="bouton"/>
+                                </button>
                                 <input type="submit" value="Rechercher" id="bouton"/>
                             </div>
                         </form>
@@ -53,7 +57,7 @@
                 </div>
             </div>
             <div id="filtre">
-                <div>
+                <div class="titre_filtre">
                     <h2>
                         Filtres
                     </h2>
@@ -76,8 +80,8 @@
                 </a>
             </div>
             <div id="information">
+                <i id="info" class="fas fa-info"></i>
                 <p>
-                    <i id="info" class="fas fa-info"></i>
                     Plus de 500 logements sont disponibles dans cette ville
                 </p>
             </div>
