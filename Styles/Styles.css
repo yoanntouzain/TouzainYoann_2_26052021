@@ -291,18 +291,20 @@ nav a {
     display: flex;
     align-items: center;
     font-family: 'Raleway-Regular';
+    margin-bottom: 20px;
 }
 #info {
     color: #0065FC;
     border: 1px solid grey;
     border-radius: 25px 25px 25px 25px;
-    padding: 5.5px 10px 5.5px 10px;
+    padding: 5.5px 9px 5.5px 9px;
     margin-left:15px;
-    margin-right: 5px;
+    margin-right: 10px;
+    font-size: 0.78em;
 }
 #information p {
+    vertical-align: middle;
     font-size: 0.98em;
-    margin-bottom: 35px;
 }
 /*Article Hébergment à Marseille*/
 section {
@@ -321,7 +323,7 @@ section {
 }
 .article_hebergement h1 {
     font-size: 1.4em;
-    margin: 40px 40px 14px 40px;
+    margin: 50px 40px 14px 40px;
 }
 #div_hebergement {
     display: flex;
@@ -332,13 +334,13 @@ section {
 }
 .lien_blanc_heb {
     background: #ffff;
-    margin: 1%;
+    margin: 1.8%;
     padding: 4px;
     border-radius: 25px 25px 25px 25px;
     box-shadow: 2px 0px 10px 0px rgb(180, 180, 180);
     text-decoration: none;
     outline: none;
-    width: 30%;
+    width: 27.8%;
     min-width: 240px;
 }
 .div_img_heb {
@@ -384,7 +386,7 @@ section {
 #afficher_plus {
     font-size: 1.1em;
     font-family: 'Raleway-ExtraBold';
-    margin: 25px 40px 30px 40px;
+    margin: 25px 40px 40px 40px;
 }
 /*Aside*/
 aside {
@@ -462,8 +464,8 @@ aside .icone_courbe {
 /*Article Activités à Marseille*/
 #activite_a_marseille {
     flex-direction: column;
-    margin-top: 2%;
-    margin-bottom: 2.5%;
+    margin-top: 2.5%;
+    margin-bottom: 4%;
 }
 .titre_activite {
     font-size: 1.4em;
@@ -548,6 +550,7 @@ footer {
     width: 33%;
     margin-top: 0px;
     margin-left: 3%;
+    margin-bottom: 2%;
 }
 .div_footer {
     display: flex;
@@ -571,17 +574,17 @@ footer {
 @media screen and (max-width: 375px) {
     .container_body {
         margin: 2% 0% 0% 0%;
-        background:chartreuse ;
     }
-    header, #recherche_hebergement, #filtre, #information, section {
+    header, #recherche_hebergement, #filtre, #information, .les_plus_populaires, #div_hebergement, .div_activite {
         margin: auto 5% auto 5%;
     }
-        /*header*/
+        /*Header*/
     header {
         display: flex;
         flex-wrap: wrap;
         margin-left: 0%;
         margin-right: 0%;
+        justify-content: center;
     }
     #logo_reservia:nth-child(1) {
         order: 1;
@@ -607,19 +610,14 @@ footer {
         text-align: center;
         border-bottom: 2px solid #f2f2f2;
         padding-bottom: 10px;
-    }
-    .div_activites_head {
-        width: 45.7%;
-        text-align: center;
-        border-bottom: 2px solid #f2f2f2;
-        padding-bottom: 10px;
+        justify-self: baseline;
     }
     #hebergements:focus,#activites:focus {
         color: #0065FC;
         border-bottom: #0065FC solid 2px;
         padding-bottom: 10px;
     }
-        /*div recherche_hebergement*/
+        /*Recherche_hebergement*/
     #titre_hebergements {
         font-size: 1.44em;
         margin-top: 40px;
@@ -650,9 +648,10 @@ footer {
         margin-top: 0px;
     }
     #formulaire_recherche {
-        padding: 16px 10px 16px 20px;
+        padding: 16px 6px 16px 20px;
         font-family: 'Raleway-ExtraBold';
         font-size: 1.2em;
+        border-right: none;
     }
     #bouton {
         display: none;
@@ -669,21 +668,106 @@ footer {
         font-family: 'Raleway-Medium';
         font-weight: bold;
     }
-    /*Filtre*/
+        /*Filtre*/
     #filtre {
         flex-wrap: wrap;
+        margin-top: 20px
     }
-    /*section*/
+    .titre_filtre {
+        font-size: 1.17em;
+        padding-right: 69px;
+    }
+    .icone_filtre {
+        font-size: 0.9em;
+        margin: 0px 10px 12px 0px;
+    }
+        /*Information*/
+    #information {
+        font-size: 1em;
+        margin-bottom: 10px;
+    }
+    #information i {
+        margin-left: 0px;
+        margin-top: 15px;
+        margin-bottom: auto;
+    }
+        /*Section*/
     section {
         display: flex;
         flex-direction: column;
+        margin-left: 0%;
+        margin-right: 0%;
     }
-    /*activité*/
+    .article_hebergement:nth-child(1) {
+        order: 2;
+    }
+    aside:nth-child(2) {
+        order: 1;
+    }
+        /*Aside*/
+    aside {
+        border-radius: 0px 0px 0px 0px;
+    }
+    aside h1 {
+        margin-left: 18px;
+    }
+    aside .icone_courbe {
+        margin-right: 15px;
+    }
+    .lien_blanc_pop {
+        margin-bottom: 10px;
+    }
+        /*Hébergement*/
+    .article_hebergement {
+        margin-right: 0px;
+        border-radius: 0px 0px 0px 0px;
+        background: #ffff;
+    }
+    .article_hebergement h1 {
+        margin-left: 18px;
+    }
+    .lien_blanc_heb {
+        margin-bottom: 10px;
+        width: 100%;
+        margin: 0px 0px 10px 0px;
+    }
+        /*Activité*/
     .div_activite {
         flex-direction: column;
     }
-    /*footer*/
+    .titre_activite {
+        margin-left: 18px;
+    }
+    .lien_blanc_act {
+        margin: 0px 0px 20px 0px;
+    }
+    .div_img_act1 {
+        height: 118px;
+    }
+    .div_img_act2 {
+        height: 118px;
+    }
+    .div_img_act3 {
+        height: 118px;
+    }
+    .div_img_act4 {
+        height: 118px;
+    }
+    .div_img_act5 {
+        height: 118px;
+    }
+        /*Footer*/
     .div_footer {
         flex-direction: column;
+    }
+    .position {
+        margin-left: 20px;
+        width: 100%;
+    }
+    .ul_footer legend {
+        font-size: 1em;
+    }
+    .ul_footer li {
+        font-size: 0.85em;
     }
 }
