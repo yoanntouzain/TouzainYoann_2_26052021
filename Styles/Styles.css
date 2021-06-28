@@ -225,7 +225,7 @@
     .loupe {
         display: none;
     }
-    #bouton {
+    .bouton {
         border: 1px solid #0065FC;
         padding: 16px 22px 16px 22px;
         background-color: #0065FC;
@@ -547,9 +547,10 @@
     }
     .position {
         display: flex;
+        flex-direction: column;
         width: 33%;
-        margin-top: 0px;
-        margin-left: 3%;
+        margin-top: 35px;
+        margin-left: 4%;
         margin-bottom: 2%;
     }
     .div_footer {
@@ -561,10 +562,10 @@
         list-style-type: none;
         padding-left: 0px;
     }
-    .ul_footer legend {
+    .legend {
         font-weight: bold;
         font-size: 1.2em;
-        margin-bottom: 20px;
+        margin-bottom: 10px;
     }
     .ul_footer li {
         font-size: 1.05em;
@@ -596,7 +597,7 @@
         font-size: 1em;
         width: 180px;
     }
-    #bouton {
+    .bouton {
         font-size: 1em;
         padding: 16px 18px 16px 18px;
     }
@@ -662,7 +663,7 @@
         justify-content: space-around;
         margin-right: 0px;
     }
-    .ul_footer legend {
+    .legend {
         font-size: 1em;
     }
     .ul_footer li {
@@ -752,7 +753,7 @@
         font-size: 1.2em;
         border-right: none;
     }
-    #bouton {
+    .bouton {
         display: none;
     }
     .loupe {
@@ -863,8 +864,10 @@
         margin-left: 20px;
         width: 100%;
     }
-    .ul_footer legend {
+    .legend {
         font-size: 1em;
+        margin-bottom: 0px;
+
     }
     .ul_footer li {
         font-size: 0.85em;
