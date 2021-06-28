@@ -573,7 +573,7 @@
         /*Pour une largueur max de 1024px (version tablette)*/
 @media screen and (min-width: 376px) and (max-width: 1024px) {
     .container_body {
-        margin: 2% 2% 2% 2%;
+        margin: 2% 0% 0% 0%;
     }
         /*Header*/
     header {
@@ -650,6 +650,9 @@
     }
     .div_activite {
         flex-wrap: wrap;
+    }
+    .lien_blanc_act {
+        margin-top: 40px;
     }
     .div_img_act1, .div_img_act2, .div_img_act3, .div_img_act4, .div_img_act5 {
         height: 200px;
