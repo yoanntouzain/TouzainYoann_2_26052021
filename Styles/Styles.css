@@ -530,7 +530,7 @@
         padding-bottom: 14px;
     }
         /*Pour une largueur max de 1024px (version tablette)*/
-@media screen and (min-width: 376px) and (max-width: 1024px) {
+@media screen and (min-width: 768px) and (max-width: 1024px) {
     .container_body {
         margin: 2% 0% 0% 0%;
     }
@@ -647,7 +647,7 @@
     }
 }
         /*Pour une largueur max de 375px (version téléphone)*/
-@media screen and (max-width: 375px) {
+@media screen and (max-width: 767px) {
     .container_body {
         margin: 2% 0% 0% 0%;
     }
@@ -660,7 +660,6 @@
         flex-wrap: wrap;
         margin-left: 0%;
         margin-right: 0%;
-        justify-content: center;
     }
     #logo_reservia:nth-child(1) {
         order: 1;
@@ -677,9 +676,17 @@
     .div_inscription_head {
         padding-top: 45px;
         padding-right: 0px;
+        width: 45.7%;
+        text-align: end
     }
     #logo_reservia {
+        padding-right: 0px;
         margin-left: 5%;
+        width: 45.7%;
+    }
+    #logo {
+        max-width: 100px;
+        object-fit: cover;
     }
     .div_hebergements_head, .div_activites_head {
         width: 45.7%;
@@ -714,6 +721,7 @@
         background-color: #ffff;
         border-radius: 16px 16px 16px 16px;
         width: 100%;
+        text-align: center;
     }
     #position {
         border: 1px solid #f2f2f2;
@@ -737,7 +745,7 @@
     }
     .bouton {
         border: 1px solid #0065FC;
-        padding: 17px 17px 17px 17px;
+        padding: 17px 16px 18px 16px;
         background-color: #0065FC;
         border-radius: 16px 16px 16px 16px;
         color: #ffff;
@@ -754,6 +762,7 @@
     .titre_filtre {
         font-size: 1.17em;
         padding-right: 69px;
+        width: 100%;
     }
     .icone_filtre {
         font-size: 0.9em;
