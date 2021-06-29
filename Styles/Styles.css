@@ -589,6 +589,10 @@
     aside h1 {
         margin-right: 20px;
     }
+    .les_plus_populaires {
+        margin-left: 100px;
+        margin-right: 100px;
+    }
         /*Hébergement*/
     .article_hebergement {
         margin-right: 0px;
