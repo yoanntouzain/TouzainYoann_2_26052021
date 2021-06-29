@@ -179,8 +179,12 @@
         width: 203px;
         font-family: 'Raleway-ExtraBold';
     }
-    .loupe {
+    #loupe {
         display: none;
+    }
+    .rechercher {
+        margin-top: 0px;
+        margin-bottom: 0px;
     }
     .bouton {
         border: 1px solid #0065FC;
@@ -721,11 +725,13 @@
         font-size: 1.2em;
         border-right: none;
     }
-    .bouton {
+    .rechercher {
         display: none;
     }
-    .loupe {
+    #loupe {
         display: block;
+    }
+    .bouton {
         border: 1px solid #0065FC;
         padding: 17px 17px 17px 17px;
         background-color: #0065FC;
