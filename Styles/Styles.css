@@ -3,109 +3,91 @@
     font-family: 'Raleway-Medium';
     src: url('Fonts/Raleway/Raleway-Medium.ttf');
     font-weight:normal;
-    font-size: normal;
 }
 @font-face {
     font-family: 'Raleway-Bold';
     src: url('Fonts/Raleway/Raleway-Bold.ttf');
     font-weight: normal;
-    font-size: normal;
 }
 @font-face {
     font-family: 'Raleway-BoldItalic';
     src: url('Fonts/Raleway/Raleway-BoldItalic.ttf');
     font-weight: normal;
-    font-size: normal;
 }
 @font-face {
     font-family: 'Raleway-ExtraBold';
     src: url('Fonts/Raleway/Raleway-ExtraBold.ttf');
     font-weight: normal;
-    font-size: normal;
 }
 @font-face {
     font-family: 'Raleway-ExtraBoldItalic';
     src: url('Fonts/Raleway/Raleway-ExtraBoldItalic.ttf');
     font-weight: normal;
-    font-size: normal;
 }
 @font-face {
     font-family: 'Raleway-Black';
     src: url('Fonts/Raleway/Raleway-Black.ttf');
     font-weight: normal;
-    font-size: normal;
 }
 @font-face {
     font-family: 'Raleway-BlackItalic';
     src: url('Fonts/Raleway/Raleway-BlackItalic.ttf');
     font-weight: normal;
-    font-size: normal;
 }
 @font-face {
     font-family: 'Raleway-ExtraLight';
     src: url('Fonts/Raleway/Raleway-ExtraLight.ttf');
     font-weight: normal;
-    font-size: normal;
 }
 @font-face {
     font-family: 'Raleway-ExtraLightItalic';
     src: url('Fonts/Raleway/Raleway-ExtraLightItalic.ttf');
     font-weight: normal;
-    font-size: normal;
 }
 @font-face {
     font-family: 'Raleway-Italic';
     src: url('Fonts/Raleway/Raleway-Italic.ttf');
     font-weight: normal;
-    font-size: normal;
 }
 @font-face {
     font-family: 'Raleway-Light';
     src: url('Fonts/Raleway/Raleway-Light.ttf');
     font-weight: normal;
-    font-size: normal;
 }
 @font-face {
     font-family: 'Raleway-LightItalic';
     src: url('Fonts/Raleway/Raleway-LightItalic.ttf');
     font-weight: normal;
-    font-size: normal;
 }
 @font-face {
     font-family: 'Raleway-MediumItalic';
     src: url('Fonts/Raleway/Raleway-MediumItalic.ttf');
     font-weight: normal;
-    font-size: normal;
 }
 @font-face {
     font-family: 'Raleway-Regular';
     src: url('Fonts/Raleway/Raleway-Regular.ttf');
     font-weight: normal;
-    font-size: normal;
 }
 @font-face {
     font-family: 'Raleway-SemiBold';
     src: url('Fonts/Raleway/Raleway-SemiBold.ttf');
     font-weight: normal;
-    font-size: normal;
 }
 @font-face {
     font-family: 'Raleway-SemiBoldItalic';
     src: url('Fonts/Raleway/Raleway-SemiBoldItalic.ttf');
     font-weight: normal;
-    font-size: normal;
 }
 @font-face {
     font-family: 'Raleway-Thin';
     src: url('Fonts/Raleway/Raleway-Thin.ttf');
     font-weight: normal;
-    font-size: normal;
 }
 @font-face {
     font-family: 'Raleway-ThinItalic';
     src: url('Fonts/Raleway/Raleway-ThinItalic.ttf');
     font-weight: normal;
-    font-size: normal;
 }
         /*site*/
     body {
