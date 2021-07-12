@@ -100,7 +100,7 @@
     header, #recherche_hebergement, #filtre, #information, section {
         margin: auto 3% auto 3%;
     }
-    h1, h2 {
+    h1, h2, h3 {
         font-family: 'Raleway-ExtraBold';
     }
     /*header*/
@@ -282,7 +282,7 @@
         margin-right: 40px;
         flex: 3.5;
     }
-    .article_hebergement h1 {
+    .article_hebergement h2 {
         font-size: 1.4em;
         margin: 50px 40px 14px 40px;
     }
@@ -318,7 +318,7 @@
     .div_description_heb {
         margin-left: 12px;
     }
-    .article_hebergement h2 {
+    .article_hebergement h3 {
         font-size: 1em;
         color: black;
         margin-bottom: 0px;
@@ -360,7 +360,7 @@
         justify-content: space-between;
         margin-top: 25px;
     }
-    aside h1 {
+    aside h2 {
         margin-left: 40px;
         font-size: 1.4em;
     }
@@ -403,7 +403,7 @@
         margin-right: 45px;
         margin-left: 20px;
     }
-    .div_description_pop h2 {
+    .div_description_pop h3 {
         font-size: 1em;
         font-weight: bold;
         color: black;
@@ -493,7 +493,7 @@
         border-radius: 25px 25px 0px 0px;
         object-fit: cover;
     }
-    .lien_blanc_act h2, .lien_blanc_act2 h2 {
+    .lien_blanc_act h3, .lien_blanc_act2 h3 {
         margin-left: 5%;
         font-size: 1em;
         color: black;
@@ -530,7 +530,7 @@
         padding-bottom: 14px;
     }
         /*Pour une largueur max de 1024px (version tablette)*/
-@media screen and (min-width: 376px) and (max-width: 1024px) {
+@media screen and (min-width: 415px) and (max-width: 1024px) {
     .container_body {
         margin: 2% 0% 0% 0%;
     }
@@ -586,7 +586,7 @@
     .titre_aside {
         justify-content: center;
     }
-    aside h1 {
+    aside h2 {
         margin-right: 20px;
     }
     .les_plus_populaires {
@@ -598,7 +598,7 @@
         margin-right: 0px;
         margin-top: 30px;
     }
-    .article_hebergement h1 {
+    .article_hebergement h2 {
         text-align: center;
     }
     .lien_blanc_heb {
@@ -646,7 +646,7 @@
         font-size: 0.85em;
     }
 }
-        /*Pour une largueur max de 375px (version téléphone)*/
+        /*Pour une largueur max de 414px (version téléphone)*/
 @media screen and (max-width: 414px) {
     .container_body {
         margin: 2% 0% 0% 0%;
@@ -689,7 +689,7 @@
         object-fit: cover;
     }
     .div_hebergements_head, .div_activites_head {
-        width: 45.7%;
+        width: 45%;
         text-align: center;
         border-bottom: 2px solid #f2f2f2;
         padding-bottom: 10px;
@@ -795,7 +795,7 @@
     aside {
         border-radius: 0px 0px 0px 0px;
     }
-    aside h1 {
+    aside h2 {
         margin-left: 18px;
     }
     aside .icone_courbe {
@@ -810,7 +810,7 @@
         border-radius: 0px 0px 0px 0px;
         background: #ffff;
     }
-    .article_hebergement h1 {
+    .article_hebergement h2 {
         margin-left: 18px;
     }
     .lien_blanc_heb {
