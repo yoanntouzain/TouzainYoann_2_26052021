@@ -736,6 +736,7 @@
         font-family: 'Raleway-ExtraBold';
         font-size: 0.9em;
         border-right: none;
+        width: 100%;
     }
     .rechercher {
         display: none;
